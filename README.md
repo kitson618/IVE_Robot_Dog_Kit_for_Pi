@@ -19,11 +19,13 @@ ping -4 raspberrypi.local
 
 	cd ~/IVE_Robot_Dog_Kit_for_Pi/Code
 
-	sudo python setup.py]
+	sudo python setup.py
 
 	sudo raspi-config
 
 * sudo nano /boot/config.txt
+
+	# add the following lines
 
 	dtparam=i2c_arm=on, and add “i2c_arm_baudrate=400000”.
 	
@@ -36,6 +38,8 @@ ping -4 raspberrypi.local
 	start_x=1
 
 * sudo nano /etc/modules
+
+	# add the following line
 
 	bcm2835-v4l2
 
