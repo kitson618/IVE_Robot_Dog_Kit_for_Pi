@@ -31,24 +31,28 @@ cd ~/IVE_Robot_Dog_Kit_for_Pi/Code/Server
 sudo python Servo.py
 
 * Upgrade Python Library
-sudo apt install -y python3-libcamera python3-kms++
-sudo apt install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg python3-pip
-pip3 install numpy --upgrade
-pip3 install picamera2[gui]
-pip install picamera2==0.3.12
+	sudo apt install -y python3-libcamera python3-kms++
+	sudo apt install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg python3-pip
+	pip3 install numpy --upgrade
+	pip3 install picamera2[gui]
+	pip install picamera2==0.3.12
 
 
 * Test
-cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
-sudo python test.py Servo
+	cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
+	sudo python test.py Servo
+
 **voltage**
-sudo python test.py ADC
+	sudo python test.py ADC
+
 **Ultrasonic**
-sudo python test.py Ultrasonic
+	sudo python test.py Ultrasonic
+
 **LED**
-sudo python test.py Led
+	sudo python test.py Led
+
 **Buzzer**
-sudo python test.py Buzzer
+	sudo python test.py Buzzer
 
 * Camera test
 libcamera-hello
@@ -84,18 +88,6 @@ sudo python main.py
 
 
 ### Copyright
-
-All the files in this repository are released under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
-
-![markdown](https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)
-
-This means you can use them on your own derived works, in part or completely. But NOT for the purpose of commercial use.
-You can find a copy of the license in this repository.
-
-Freenove brand and logo are copyright of Freenove Creative Technology Co., Ltd. Can't be used without formal permission.
-
-
-### About
 
 Freenove is an open-source electronics platform.
 
