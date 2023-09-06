@@ -23,7 +23,7 @@ sudo raspi-config
 
 * sudo nano /boot/config.txt
 
-	# add the following lines
+	#### add the following lines:
 
 	dtparam=i2c_arm=on, and add “i2c_arm_baudrate=400000”.
 	
@@ -37,7 +37,7 @@ sudo raspi-config
 
 * sudo nano /etc/modules
 
-	# add the following line
+	#### add the following line:
 
 	bcm2835-v4l2
 
