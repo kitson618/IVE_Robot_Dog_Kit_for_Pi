@@ -11,17 +11,15 @@ Don't upgrade Pi-OS!!! Else it will crash and need to reinstall Pi-OS and everyt
 
 ping -4 raspberrypi.local
 
-* To setup pi
+cd ~
 
-	cd ~
+git clone https://github.com/kitson618/IVE_Robot_Dog_Kit_for_Pi.git
 
-	git clone https://github.com/kitson618/IVE_Robot_Dog_Kit_for_Pi.git
+cd ~/IVE_Robot_Dog_Kit_for_Pi/Code
 
-	cd ~/IVE_Robot_Dog_Kit_for_Pi/Code
+sudo python setup.py
 
-	sudo python setup.py
-
-	sudo raspi-config
+sudo raspi-config
 
 * sudo nano /boot/config.txt
 
