@@ -17,6 +17,7 @@ sudo python setup.py
 sudo raspi-config
 
 * sudo nano /boot/config.txt
+
 dtparam=i2c_arm=on, and add “i2c_arm_baudrate=400000”.
 dtoverlay=vc4-fkms-v3d,cma-320
 dtoverlay=OV5647
@@ -24,6 +25,7 @@ gpu_mem=128
 start_x=1
 
 * sudo nano /etc/modules
+
 bcm2835-v4l2
 
 keep 90
@@ -31,37 +33,46 @@ cd ~/IVE_Robot_Dog_Kit_for_Pi/Code/Server
 sudo python Servo.py
 
 * Upgrade Python Library
-	sudo apt install -y python3-libcamera python3-kms++
-	sudo apt install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg python3-pip
-	pip3 install numpy --upgrade
-	pip3 install picamera2[gui]
-	pip install picamera2==0.3.12
+
+sudo apt install -y python3-libcamera python3-kms++
+sudo apt install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg python3-pip
+pip3 install numpy --upgrade
+pip3 install picamera2[gui]
+pip install picamera2==0.3.12
 
 
 * Test
-	cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
-	sudo python test.py Servo
+
+cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
+sudo python test.py Servo
 
 **voltage**
-	sudo python test.py ADC
+
+sudo python test.py ADC
 
 **Ultrasonic**
-	sudo python test.py Ultrasonic
+
+sudo python test.py Ultrasonic
 
 **LED**
-	sudo python test.py Led
+
+sudo python test.py Led
 
 **Buzzer**
-	sudo python test.py Buzzer
+
+sudo python test.py Buzzer
 
 * Camera test
+
 libcamera-hello
 
 * take photo
+
 python camera.py
 libcamera-still -o test.jpg
 
 * check camera state
+
 vcgencmd get_camera
 v4l2-ctl --list-devices
 
