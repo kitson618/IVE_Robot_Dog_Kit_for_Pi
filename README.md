@@ -39,9 +39,11 @@ sudo raspi-config
 
 	bcm2835-v4l2
 
-keep 90
-cd ~/IVE_Robot_Dog_Kit_for_Pi/Code/Server
-sudo python Servo.py
+* keep 90
+
+	cd ~/IVE_Robot_Dog_Kit_for_Pi/Code/Server
+
+	sudo python Servo.py
 
 * Upgrade Python Library
 
@@ -61,7 +63,7 @@ cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
 
 sudo python test.py Servo
 
-* voltage
+* Voltage
 
 	sudo python test.py ADC
 
